@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="http://localhost/login.php">
+      <h1><서버 : http://localhost/login.php></h1>
+      <p>아이디 : <input type="text" name="id" value="admin"></p>
+      <p>비밀번호 : <input type="password" name="pwd"></p>
+      <p>인증번호 : <input type="text" name="number" value="1234"></p>
+      <input type="submit" value="Log in">
+    </form>
+      <hr class="one">
+      <form action="http://localhost/order.php">
+        <h1><서버 : http://localhost/order.php></h1>
+        <h3>색상</h3>
+        <select name="color">
+          <option value="red">빨강</option>
+          <option value="black">검정</option>
+          <option value="blue">파랑</option>
+        </select>
+        <h3>색상2 (다중선택) [ctrl키 필수]</h3>
+        <select name="color2" multiple>
+          <option value="red">빨강</option>
+          <option value="black">검정</option>
+          <option value="blue">파랑</option>
+        </select>
+        <p>
+          <h3>색상3 (단일선택)</h3>
+          빨강 : <input type="radio"name="color3" value="red">
+          검정 : <input type="radio"name="color3" value="black" checked>
+          파랑 : <input type="radio"name="color3" value="blue">
+        </p>
+        <p>
+          <h3>사이즈 (다중선택)</h3>
+        95 : <input type="checkbox"name="size" value="95" checked>
+        100 : <input type="checkbox"name="size" value="100" checked>
+        105 : <input type="checkbox"name="size" value="105">
+        </p>
+        <input type="submit" value="주문">
+      </form>
+      <hr class="one">
+      <p><h1>메모장(?)</h1> <textarea cols="30" rows="2">default value</textarea>
+  </body>
+</html>
