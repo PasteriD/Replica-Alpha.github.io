@@ -7,7 +7,7 @@
   <body>
     <form action="http://localhost/login.php" method="post">
       <h1><서버 : http://localhost/login.php></h1>
-      - 기본 권한은 admin입니다. / 머리말을 클릭해도 입력 가능합니다. <br>
+      <i>- 기본 권한은 <b>admin</b>입니다. / <b>머리말</b>을 클릭해도 입력 가능합니다.</i> <br>
       <p><label for="id_txt">아이디 : </label> <input id="id_txt" type="text" name="id" value="아이디를 입력하십시오"></p>
       <p><label for="pwd">비밀번호 : </label> <input id="pwd" type="password" name="pwd" value="비밀번호를 입력하십시오"></p>
       <p><label>인증번호 : <input type="text" name="number" value="먼저 번호를 발급받으십시오"></label> <input type="button" value="인증번호 발급" onclick="alert('1234')"></p>
@@ -23,7 +23,7 @@
           <option value="black">검정</option>
           <option value="blue">파랑</option>
         </select>
-        <h3>색상2 (다중선택) [ctrl키 필수]</h3>
+        <h3>색상2 (다중선택) <b>[ctrl키 필수]</b></h3>
         <select name="color2" multiple>
           <option value="red">빨강</option>
           <option value="black">검정</option>
@@ -31,14 +31,14 @@
         </select>
         <p>
           <h3>색상3 (단일선택)</h3>
-          - 기본 검정입니다. / 머리말을 클릭해도 입력 가능합니다. <br><br>
+          <i>- 기본 <b>검정</b>입니다. / <b>머리말</b>을 클릭해도 입력 가능합니다.</i> <br><br>
           <label>빨강 : <input type="radio"name="color3" value="red"></label>
           <label>검정 : <input type="radio"name="color3" value="black" checked></label>
           <label>파랑 : <input type="radio"name="color3" value="blue"></label>
         </p>
         <p>
           <h3>사이즈 (다중선택)</h3>
-          - 기본 95, 100입니다. / 머리말을 클릭해도 입력 가능합니다. <br><br>
+          <i>- 기본 <b>95, 100</b>입니다. / <b>머리말</b>을 클릭해도 입력 가능합니다.</i> <br><br>
         <label>95 : <input type="checkbox"name="size" value="95" checked></label>
         <label>100 : <input type="checkbox"name="size" value="100" checked></label>
         <label>105 : <input type="checkbox"name="size" value="105"></label>
